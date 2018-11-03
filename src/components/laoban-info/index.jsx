@@ -52,7 +52,8 @@ class LbanInfo extends Component {
     const {msg}=this.props.user;
     return (
       <div>
-        <NavBar>老板信息完善</NavBar>
+        <NavBar>老板信息完善
+        </NavBar>
         <HeaderSelector setHeader={this.setHeader}/>
         {mag ? <p className="err-msg">{msg}</p>:''}
         <InputItem onChange={val=>this.handleChange('post',val)}>招聘职位:</InputItem>
